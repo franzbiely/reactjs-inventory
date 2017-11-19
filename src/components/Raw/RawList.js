@@ -4,9 +4,7 @@ export default class RawList extends React.Component {
 
 	constructor(props) {
 		super(props);
-
 	}
-
 	render() {
 		const items = this.props.items;
 
@@ -20,21 +18,21 @@ export default class RawList extends React.Component {
 		  	</tr>
 		);
 		return (
-			<table border="1">
-				<thead>
-					<h3>Raw Inventory</h3>
-				</thead>
-				<tbody>
-				<tr>
-					<th>Item name</th>
-					<th>Quantity</th>
-					<th>Category</th>
-					<th>Department</th>
-					<th>Store</th>
-				</tr>
-				{itemsDOM}
-				</tbody>
-			</table>
+			<div>
+				<h3>Raw Inventory</h3>
+				<table border="1">
+					<tbody>
+					<tr>
+						<th>Item name</th>
+						<th>Quantity</th>
+						<th>Category</th>
+						<th>Department</th>
+						<th>Store</th>
+					</tr>
+					{itemsDOM}
+					</tbody>
+				</table>
+			</div>
 		)
 	}
 }
