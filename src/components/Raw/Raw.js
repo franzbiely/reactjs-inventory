@@ -9,9 +9,7 @@ export default class Raw extends React.Component {
 
 		this.state = {
 			histories : [],
-			items : [
-				{ name: 'A', qty : 1 }
-			]
+			items : []
 		}
 
 		this.addItem = this.addItem.bind(this);
@@ -27,9 +25,6 @@ export default class Raw extends React.Component {
 		this.addHistory(item);
 		const items = {...this.state.items};
 		const timestamp = Date.now();
-		console.log(typeof item.qty, typeof items[0].qty);
-
-
 
 
 		// check if exists in items

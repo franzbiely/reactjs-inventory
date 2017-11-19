@@ -11,7 +11,7 @@ export default class RawAddForm extends React.Component {
 			cost : 0,
 			store : 'save-more',
 			department : 'kitchen',
-			category : 'wet-goods',
+			category : 'wet-goods'
 		}
 
 	    this.handleInputChange = this.handleInputChange.bind(this);
